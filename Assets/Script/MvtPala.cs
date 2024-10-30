@@ -17,7 +17,7 @@ public class MvtPala : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        x = Input.GetAxis("Horizontal");    // atl + flechas para mover el codigo
+        //x = Input.GetAxis("Horizontal");    // atl + flechas para mover el codigo
         y = Input.GetAxis("Vertical"); // control + k + c reorganizar el codigo
         // para comertar todo control + k + c (es necesario seleccionar todo previamente)
         // para descomertar todo control + k + u (es necesario seleccionar todo previamente)
@@ -28,4 +28,5 @@ public class MvtPala : MonoBehaviour
         rb.velocity = new Vector2(x, y) * speed; // 2 de 2d
         // ajustas la velocidad en los componentes de unity*
     }
+
 }
