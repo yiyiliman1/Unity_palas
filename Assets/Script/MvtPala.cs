@@ -21,6 +21,14 @@ public class MvtPala : MonoBehaviour
         y = Input.GetAxis("Vertical"); // control + k + c reorganizar el codigo
         // para comertar todo control + k + c (es necesario seleccionar todo previamente)
         // para descomertar todo control + k + u (es necesario seleccionar todo previamente)
+        //if (gameObject.name == "PalaIZ")
+        //{
+        //    x = Input.GetAxis("Horizontal");     
+        //    y = Input.GetAxis("Vertical");     
+        //} else if (gameObject.name == "PalaDE") {
+        //    x = Input.GetAxis("player (h)");
+        //    y = Input.GetAxis("player (v)");
+        //}
     }
     private void FixedUpdate()
     {
