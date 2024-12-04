@@ -5,6 +5,7 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     public float speed;
+    public AudioClip bounceAudioClip;
     private Rigidbody2D rb;
     private Vector2 direccion;
     private Vector2 initialPosition;
@@ -36,6 +37,7 @@ public class Ball : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        AudioManager.instance.PlayAudio(bounceAudioClip, "Boing Sound Effect", 0.3f);
         // cada vez que choca la pelota, rebota. Se choca collision
         if (collision.gameObject.GetComponent<MvtPala>())
         {
@@ -52,4 +54,5 @@ public class Ball : MonoBehaviour
         }
         
     }
+    
 }
