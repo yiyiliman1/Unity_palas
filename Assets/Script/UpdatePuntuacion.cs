@@ -11,6 +11,7 @@ public class UpdatePuntuacion : MonoBehaviour
     void Start()
     {
         textComponent = GetComponent<TMP_Text>(); // accede a alista de componentesdel objeto al cual este componente esta asignado
+
     }
 
     // Update is called once per frame
